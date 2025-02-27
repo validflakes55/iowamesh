@@ -1,0 +1,72 @@
+site_name: Iowa Mesh
+site_description: A local community of Meshtastic enthusiasts in Iowa, building a sustainable and interconnected network of decentralized nodes.
+site_url: https://iowamesh.org
+repo_url: https://github.com/validflakes55/iowamesh
+
+nav:
+  - About: about.md
+  - Guides:
+    - guides/index.md
+    - Getting Started:
+      - guides/getting-started/index.md
+      - Node Configuration Guide: guides/getting-started/configuration.md
+    - Local Channel: guides/local-channel.md
+    - Builds: 
+      - guides/builds/index.md
+  - Resources: resources.md
+  - Contact: contact.md
+
+plugins:
+  - social
+  - search
+
+markdown_extensions:
+  - md_in_html
+  - tables
+  - attr_list
+  - abbr
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - custom_theme/.icons
+
+theme:
+  name: material
+  nav_style: dark
+  custom_dir: custom_theme/
+  logo: images/logo.jpg
+  favicon: images/logo.jpg
+  palette:
+    scheme: slate
+    primary: black
+  features:
+    - navigation.tabs
+    - navigation.path
+    - navigation.section
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.share
+    - announce.dismiss
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  generator: false
+  social:
+    - icon: custom/meshtastic
+      link: https://meshtastic.org
+      name: Official Meshtastic website
+    - icon: fontawesome/brands/github
+      link: https://github.com/validflakes55/iowamesh
+      name: Contribute
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/AXxQQQ6yRV
+      name: Join Discord
