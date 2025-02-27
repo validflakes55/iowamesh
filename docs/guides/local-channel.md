@@ -7,15 +7,26 @@ tags:
 # Iowa Mesh Local Channel Configuration
 Add the channel configuration below to communicate encrypted messages on Iowa Mesh.
 
-1. Go to Settings and add/edit Channel 2
+1. Go to Settings and add/edit any channel other than channel 0
 
-2. Set the channel role to `Secondary`
+1. Channel Name `Iowa`
 
-3. Enter the Pre-Shared Key
-    - Iowa Mesh PSK: `<INSERT PSK HERE>`
+1. Channel Role `Secondary`
 
-4. Set the name to `Iowa`
+1. Enter the Pre-Shared Key
+    - Iowa Mesh PSK: `2rCO4ASOTBnzyWgUd7yKC3lcw6Rw+GrhQRzFUB3u/iA=`
 
-5. Disable MQTT Uplink and Downlink
+1. Allow Position Requests: `Enabled`
 
-![Local Channel Settings](../images/local-channel.png)
+1. Precise Location `Enabled`
+
+1. Disable MQTT Uplink and Downlink
+
+
+!!! note "Location & MQTT Considerations"
+
+    At some point, we may deploy a private MQTT server to be used for position data tracking. Both `Allow Position Requests` and `MQTT Uplink` will need to be enabled for this to work properly.
+
+---
+
+![Local Channel Settings](../images/local-channel_600.png)
